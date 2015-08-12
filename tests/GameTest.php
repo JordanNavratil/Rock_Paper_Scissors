@@ -12,14 +12,14 @@
         {
             //Arrange
             $game = new Game;
-            $option_1 = "rock";
-            $option_2 = "rock";
+            $input_1 = "rock";
+            $input_2 = "scissors";
 
             //Act
-            $result = $game->shoot($option_1, $option_2);
+            $result = $game->shoot($input_1, $input_2);
 
             // Assert
-            $this->assertEquals("Draw", $result);
+            $this->assertEquals("player 1", $result);
      }
  }
 
